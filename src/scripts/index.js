@@ -7,7 +7,7 @@ canvas.height = screenHeight;
 
 //const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
 
-let gradient = ctx.createRadialGradient(canvas.width / 2, canvas.height / 2, 500, canvas.width / 2, canvas.height / 2, canvas.width / 2);
+let gradient = ctx.createRadialGradient(canvas.width / 2, canvas.height / 2, 100, canvas.width / 2, canvas.height / 2, canvas.width / 2);
 
 gradient.addColorStop(0, 'red');
 gradient.addColorStop(0.1, 'orange');
@@ -96,7 +96,7 @@ window.addEventListener('resize', () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     effect.resize(canvas.height, canvas.width);
-    gradient = ctx.createRadialGradient(canvas.width / 2, canvas.height / 2, 500, canvas.width / 2, canvas.height / 2, canvas.width / 2);
+    gradient = ctx.createRadialGradient(canvas.width / 2, canvas.height / 2, 100, canvas.width / 2, canvas.height / 2, canvas.width / 2);
     gradient.addColorStop(0, 'red');
     gradient.addColorStop(0.1, 'orange');
     gradient.addColorStop(0.2, 'yellow');
